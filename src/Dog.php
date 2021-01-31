@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Dog 
+class Dog extends Animal
 {
     
 }

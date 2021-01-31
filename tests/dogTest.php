@@ -4,6 +4,7 @@ namespace App\Tests;
 
 require __DIR__ . '/../vendor/autoload.php';
 
+use App\Animal;
 use App\Dog;
 use PHPUnit\Framework\TestCase;
 
@@ -14,5 +15,11 @@ class dogTest extends TestCase
     {
         $this->assertTrue(class_exists(Dog::class));
     }
-
+    
+        public function testDogInstanceOfAnimal()
+    {
+        $dog = new Dog;
+        $this->assertInstanceOf(Dog::class, $dog);
+        $this->assertInstanceOf(Animal::class, $dog);
+    }
 }
