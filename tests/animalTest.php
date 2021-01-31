@@ -28,7 +28,7 @@ class animalTest extends TestCase
         $animal->expects($this->once())->method('getAge')->willReturn(23);
         $this->assertEquals(23, $animal->getAge());
     }
-    
+
     public function testAnimalStub()
     {
         $animal = new AnimalStub('Animal1', 99);

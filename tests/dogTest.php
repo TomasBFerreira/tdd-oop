@@ -15,11 +15,18 @@ class dogTest extends TestCase
     {
         $this->assertTrue(class_exists(Dog::class));
     }
-    
-        public function testDogInstanceOfAnimal()
+
+    public function testDogInstanceOfAnimal()
     {
         $dog = $this->getMockBuilder(Dog::class)->disableOriginalConstructor()->getMock();
         $this->assertInstanceOf(Dog::class, $dog);
         $this->assertInstanceOf(Animal::class, $dog);
     }
+
+    public function testBark()
+    {
+        $dog = new Dog('Mishu', 0);
+        $this->assertEquals('WOOF!', $dog->bark());
+    }
+
 }
