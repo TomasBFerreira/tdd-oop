@@ -17,8 +17,14 @@ class personTest extends TestCase
     
     public function testPersonInstanceOfAnimal()
     {
-        $person = new Person;
+        $person = $this->getMockBuilder(Person::class)->disableOriginalConstructor()->getMock();
         $this->assertInstanceOf(Person::class, $person);
         $this->assertInstanceOf(Animal::class, $person);
+    }
+    
+    public function testGetPersonNameIsString()
+    {
+        $person = new Person('Tomas', 23);
+        $this->assertTrue(is_string($person->getName()));
     }
 }

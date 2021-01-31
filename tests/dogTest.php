@@ -18,7 +18,7 @@ class dogTest extends TestCase
     
         public function testDogInstanceOfAnimal()
     {
-        $dog = new Dog;
+        $dog = $this->getMockBuilder(Dog::class)->disableOriginalConstructor()->getMock();
         $this->assertInstanceOf(Dog::class, $dog);
         $this->assertInstanceOf(Animal::class, $dog);
     }
