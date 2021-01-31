@@ -4,5 +4,5 @@ namespace App;
 
 interface PersonInterface
 {
-public function talk(): string;
+    public function talk(): string;
 }

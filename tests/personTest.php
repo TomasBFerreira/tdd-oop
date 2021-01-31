@@ -2,13 +2,11 @@
 
 namespace App\Tests;
 
-require __DIR__ . '/../vendor/autoload.php';
-
 use App\Person;
 use App\Animal;
 use PHPUnit\Framework\TestCase;
 
-class personTest extends TestCase
+class PersonTest extends TestCase
 {
 
     public function testClassPersonExists()
@@ -34,5 +32,4 @@ class personTest extends TestCase
         $person = new Person('Pedro', 52);
         $this->assertEquals('Hello my name is Pedro', $person->talk());
     }
-
 }

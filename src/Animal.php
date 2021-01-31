@@ -23,5 +23,4 @@ abstract class Animal implements AnimalInterface
     {
         return $this->age;
     }
-
 }

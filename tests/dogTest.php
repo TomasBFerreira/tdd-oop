@@ -2,13 +2,11 @@
 
 namespace App\Tests;
 
-require __DIR__ . '/../vendor/autoload.php';
-
 use App\Animal;
 use App\Dog;
 use PHPUnit\Framework\TestCase;
 
-class dogTest extends TestCase
+class DogTest extends TestCase
 {
 
     public function testClassDogExists()
@@ -28,5 +26,4 @@ class dogTest extends TestCase
         $dog = new Dog('Mishu', 0);
         $this->assertEquals('WOOF!', $dog->bark());
     }
-
 }

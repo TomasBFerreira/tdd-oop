@@ -9,5 +9,4 @@ class Person extends Animal implements PersonInterface
     {
         return 'Hello my name is ' . $this->name;
     }
-
 }

@@ -9,5 +9,4 @@ class Dog extends Animal
     {
         return 'WOOF!';
     }
-
 }

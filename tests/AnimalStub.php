@@ -6,5 +6,5 @@ use App\Animal;
 
 class AnimalStub extends Animal
 {
-    
+
 }
